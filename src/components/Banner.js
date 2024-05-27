@@ -13,6 +13,16 @@ export const Banner = () => {
     ));
   };
 
+  const renderSpacedText = (text) => {
+    const words = text.split(" ");
+    return words.map((word, wordIndex) => (
+      <span key={wordIndex}>
+        {renderLetters(word)}
+        {wordIndex < words.length - 1 && <span>&nbsp;</span>}
+      </span>
+    ));
+  };
+
   return (
     <section className="banner" id="home">
       <Container>
@@ -29,7 +39,7 @@ export const Banner = () => {
                   <h1>
                     {`Hi! I'm Fahad,`}{" "}
                     <span className="txt-static">
-                      {renderLetters("Frontend React Developer")}
+                      {renderSpacedText(`Frontend React Developer`)}
                     </span>
                   </h1>
                   <p>

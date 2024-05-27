@@ -1,52 +1,60 @@
 const express = require("express");
-const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
+require("dotenv").config(); // Load environment variables from .env file
 
-// server used to send send emails
 const app = express();
-app.use(cors());
+
+// Configure CORS to allow requests from your frontend origin
+app.use(
+  cors({
+    origin: "http://localhost:3000", // Update to your frontend URL if different
+    optionsSuccessStatus: 200,
+  })
+);
+
 app.use(express.json());
-app.use("/", router);
-app.listen(5000, () => console.log("Server Running"));
-console.log(process.env.EMAIL_USER);
-console.log(process.env.EMAIL_PASS);
+
+app.listen(5000, () => console.log("Server Running on port 5000"));
 
 const contactEmail = nodemailer.createTransport({
-  service: 'gmail',
+  service: "gmail",
   auth: {
-    user: "********@gmail.com",
-    pass: ""
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS, // Use an App Password if 2FA is enabled
   },
 });
 
-contactEmail.verify((error) => {
+contactEmail.verify((error, success) => {
   if (error) {
-    console.log(error);
+    console.error("Nodemailer verification error:", error);
   } else {
-    console.log("Ready to Send");
+    console.log("Nodemailer ready to send:", success);
   }
 });
 
-router.post("/contact", (req, res) => {
-  const name = req.body.firstName + req.body.lastName;
-  const email = req.body.email;
-  const message = req.body.message;
-  const phone = req.body.phone;
+app.post("/contact", (req, res) => {
+  const { firstName, lastName, email, message, phone } = req.body;
+
+  console.log("Received request data:", req.body);
+
   const mail = {
-    from: name,
-    to: "********@gmail.com",
+    from: email,
+    to: process.env.EMAIL_USER,
     subject: "Contact Form Submission - Portfolio",
-    html: `<p>Name: ${name}</p>
+    html: `<p>Name: ${firstName} ${lastName}</p>
            <p>Email: ${email}</p>
            <p>Phone: ${phone}</p>
            <p>Message: ${message}</p>`,
   };
-  contactEmail.sendMail(mail, (error) => {
+
+  contactEmail.sendMail(mail, (error, info) => {
     if (error) {
-      res.json(error);
+      console.error("Error sending email:", error);
+      res.status(500).json({ status: "fail", error: error.toString() });
     } else {
-      res.json({ code: 200, status: "Message Sent" });
+      console.log("Email sent successfully:", info.response);
+      res.status(200).json({ status: "success", message: "Message Sent" });
     }
   });
 });

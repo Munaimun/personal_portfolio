@@ -1,8 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/profile.jpg";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import "animate.css";
 import TrackVisibility from "react-on-screen";
+
+import headerImg from "../assets/img/profile.jpg";
+
+import "animate.css";
 
 export const Banner = () => {
   const renderLetters = (text) => {
@@ -48,7 +50,12 @@ export const Banner = () => {
                     internship/job opportunities to apply and enhance my skills.
                   </p>
                   <button>
-                    Let’s Connect <ArrowRightCircle size={25} />
+                    <a
+                      href="https://www.linkedin.com/in/munaimun/"
+                      target="blank"
+                    >
+                      Let’s Connect <ArrowRightCircle size={25} />
+                    </a>
                   </button>
                 </div>
               )}

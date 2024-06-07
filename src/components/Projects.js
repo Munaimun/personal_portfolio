@@ -13,7 +13,7 @@ const projects = [
     description:
       "Created a chatbot application that utilizes Axios to handle API requests for seamless data fetching from the backend and implements secure user authorization using JWT. A streamlined chat interface for accessing university information, complemented by an admin panel for efficient database and student list management.",
     imgUrl: intelitalk,
-    liveLink: "https://intelitalk.onrender.com/",
+    liveLink: "https://intelitalk-production.up.railway.app/",
     githubLink: "https://github.com/dev-saiful/InteliTalk/tree/frontend",
   },
   {

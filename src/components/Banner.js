@@ -51,6 +51,7 @@ export const Banner = () => {
                   </p>
                   <button>
                     <a
+                      className="lets-connect"
                       href="https://www.linkedin.com/in/munaimun/"
                       target="blank"
                     >

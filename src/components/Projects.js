@@ -1,11 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import TrackVisibility from "react-on-screen";
 import intelitalk from "../assets/img/intelitalk.png";
+import fashionfusion from "../assets/img/FashionFusion.png";
 import topcourses from "../assets/img/topcourses.jpg";
 import viewfinder from "../assets/img/viewfinder.jpg";
 import quizjs from "../assets/img/quiz.jpg";
 import "animate.css";
-import TrackVisibility from "react-on-screen";
 
 const projects = [
   {
@@ -15,6 +16,14 @@ const projects = [
     imgUrl: intelitalk,
     liveLink: "https://intelitalk-production.up.railway.app/",
     githubLink: "https://github.com/dev-saiful/InteliTalk/tree/frontend",
+  },
+  {
+    title: "FashionFusion - Ecommerce",
+    description:
+      "Implemented features such as product categorization, a dynamic cart system for adding and removing items, and a user authentication system for secure login",
+    imgUrl: fashionfusion,
+    liveLink: "https://fashion-fusion-commerce.vercel.app/",
+    githubLink: "https://github.com/Munaimun/Fashion_Fusion",
   },
   {
     title: "Top Courses - Course catalog application",

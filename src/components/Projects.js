@@ -1,11 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
+
 import intelitalk from "../assets/img/intelitalk.png";
+import ecommerce from "../assets/img/ecommerce.png";
 import fashionfusion from "../assets/img/FashionFusion.png";
 import topcourses from "../assets/img/topcourses.jpg";
 import viewfinder from "../assets/img/viewfinder.jpg";
 import quizjs from "../assets/img/quiz.jpg";
+
 import "animate.css";
 
 const projects = [
@@ -16,6 +19,14 @@ const projects = [
     imgUrl: intelitalk,
     liveLink: "https://intelitalk-production.up.railway.app/",
     githubLink: "https://github.com/dev-saiful/InteliTalk/tree/frontend",
+  },
+  {
+    title: "E-commerce",
+    description:
+      "Developed an e-commerce website featuring a user-friendly interface for seamless product browsing. The platform includes robust cart functionality, allowing users to effortlessly add and remove items. Secure user authentication and login management were implemented using Firebase.",
+    imgUrl: ecommerce,
+    liveLink: "https://e-commerce-beta-flax-21.vercel.app/",
+    githubLink: "https://github.com/Munaimun/eCommerce",
   },
   {
     title: "FashionFusion - Ecommerce",

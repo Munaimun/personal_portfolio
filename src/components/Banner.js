@@ -45,9 +45,8 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    Final-year student at Sonargaon University, deeply
-                    passionate about React development. Actively pursuing
-                    internship/job opportunities to apply and enhance my skills.
+                    Deeply passionate about Frontend React development. Actively
+                    pursuing job opportunities to apply and enhance my skills.
                   </p>
                   <button>
                     <a

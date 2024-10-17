@@ -4,7 +4,7 @@ import TrackVisibility from "react-on-screen";
 
 import headerImg from "../assets/img/profile.jpg";
 
-import "animate.css";
+// import "animate.css";
 
 export const Banner = () => {
   const renderLetters = (text) => {
@@ -38,7 +38,7 @@ export const Banner = () => {
                   }
                 >
                   <span className="tagline">Welcome to my Portfolio</span>
-                  <h1>
+                  <h1 className="animate__animated animate__rotateInDownLeft">
                     {`Hi! I'm Fahad,`}{" "}
                     <span className="txt-static">
                       {renderSpacedText(`Frontend React Developer`)}

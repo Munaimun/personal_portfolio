@@ -26,7 +26,7 @@ export const Skills = () => {
 
   return (
     <section className="skill" id="skills">
-      <div className="container">
+      <div className="container ">
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
@@ -51,6 +51,9 @@ export const Skills = () => {
                 </div>
                 <div className="item">
                   <h5>Python</h5>
+                </div>
+                <div className="item">
+                  <h5>OOP</h5>
                 </div>
                 <div className="item">
                   <h5>Git & Github</h5>

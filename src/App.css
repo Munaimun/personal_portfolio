@@ -367,7 +367,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
   margin: 20px;
   max-width: 400px;
-  transition: transform 0.3s;
+  transition: transform 0.3s, height 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .project .card:hover {
   transform: scale(1.05);
@@ -379,6 +382,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project .project-info {
   padding: 20px;
   color: #fff;
+  flex-grow: 1;
+  overflow: hidden;
 }
 .project .title {
   font-size: 24px;
@@ -388,13 +393,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project .description {
   font-size: 16px;
   margin-bottom: 20px;
+  overflow: hidden;
+}
+.project .read-more-text {
+  color: cyan;
+  cursor: pointer;
+  margin-left: 5px;
+  text-decoration: underline;
 }
 .project .buttons {
   display: flex;
   justify-content: space-between;
+  padding: 10px 20px 20px 20px;
 }
 .project .project-link {
-  background-color: #4A2FBD;
+  background-color: #4a2fbd;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -404,14 +417,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project .project-link:hover {
   background-color: gray;
 }
-.background-image-right {
-  top: 20%;
-  position: absolute;
-  bottom: 0;
-  width: 35%;
-  right: 0;
-  z-index: -4;
-}
+
 
 /************ Contact Css ************/
 .contact {

@@ -68,7 +68,7 @@ const projects = [
     description:
       "Developed a quiz application using Vanilla JS that asks questions about JavaScript concepts, testing users' knowledge and providing an engaging learning experience.",
     imgUrl: quizjs,
-    liveLink: "https://munaimun.github.io/Quiz_js/",
+    liveLink: "https://munaimun.github.io/ScriptTest/",
     githubLink: "https://github.com/Munaimun/Quiz_js",
   },
   {

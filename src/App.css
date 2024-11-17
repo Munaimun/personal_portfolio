@@ -303,6 +303,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
+  display: flex;
+  align-items: center;
+  height:100vh;
+  /* background-color: #fff; */
   padding: 0 0 50px 0;
   position: relative;
 }

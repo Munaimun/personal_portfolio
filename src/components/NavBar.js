@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { BrowserRouter as Router } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { Navbar, Nav, Container } from "react-bootstrap";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import logo from "../assets/img/logo.png";
 import { HashLink } from "react-router-hash-link";
-import { BrowserRouter as Router } from "react-router-dom";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");

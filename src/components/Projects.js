@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 
+import complete_E from "../assets/img/complete_ecommerce.png";
 import intelitalk from "../assets/img/intelitalk.png";
 import ecommerce from "../assets/img/ecommerce.png";
 import techcommerce from "../assets/img/techcommerce.png";
@@ -16,11 +17,19 @@ import restaurant from "../assets/img/restaurant.png";
 
 const projects = [
   {
+    title: "Complete E-commerce",
+    description:
+      "Implemented product categorization, a dynamic cart system for adding and removing items, add to favorite section and a user authentication system for secure login. Integrated a payment system",
+    imgUrl: complete_E,
+    liveLink: "https://complete-e-commerce-7v1b.vercel.app/",
+    githubLink: "https://github.com/Munaimun/Complete_E-commerce",
+  },
+  {
     title: "InteliTalk- Chatbot",
     description:
       "Created a chatbot application that utilizes Axios to handle API requests for seamless data fetching from the backend and implements secure user authorization using JWT. A streamlined chat interface for accessing university information, complemented by an admin panel for efficient database and student list management.",
     imgUrl: intelitalk,
-    liveLink: "https://intelitalk-production.up.railway.app/",
+    liveLink: "https://intelitalk.onrender.com/",
     githubLink: "https://github.com/dev-saiful/InteliTalk/tree/frontend",
   },
   {
@@ -28,7 +37,7 @@ const projects = [
     description:
       "This is a robust e-commerce platform developed using React, Redux, and REST API. The project delivers a seamless online shopping experience with dynamic product categorization, a responsive user interface, and a secure user authentication system. It features a real-time cart management system that allows users to add, remove, and update items effortlessly. The platform integrates various payment methods, ensuring a smooth and secure checkout process. Additionally, an admin dashboard is included for managing products, orders, and users, showcasing my proficiency in full stack front-end development and API integration.",
     imgUrl: ecommerce,
-    liveLink: "https://ecommerce-fady.vercel.app/",
+    liveLink: "https://munaimuns-ecommerce.netlify.app/",
     githubLink: "https://github.com/Munaimun/Ecommerce",
   },
   {
@@ -36,7 +45,7 @@ const projects = [
     description:
       "Developed an e-commerce website featuring a user-friendly interface for seamless product browsing. The platform includes robust cart functionality, allowing users to effortlessly add and remove items. Secure user authentication and login management were implemented using Firebase.",
     imgUrl: techcommerce,
-    liveLink: "#",
+    liveLink: "https://github.com/Munaimun/TechCommerce",
     githubLink: "https://github.com/Munaimun/TechCommerce",
   },
   {

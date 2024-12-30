@@ -44,6 +44,9 @@ export const Skills = () => {
                   <h5>React.JS</h5>
                 </div>
                 <div className="item">
+                  <h5>Next.JS</h5>
+                </div>
+                <div className="item">
                   <h5>JavaScript</h5>
                 </div>
                 <div className="item">

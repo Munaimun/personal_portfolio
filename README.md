@@ -1,35 +1,41 @@
-# Personal Portfolio Website in React
+# Munaimun Bari Fahad - Portfolio  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my portfolio! This repository showcases my journey as a software engineer, highlighting the projects and skills I have developed.  
 
+## About Me  
 
-Built using:
+Hi, I’m **Munaimun Bari Fahad**, a passionate software engineer specializing in frontend development with ReactJS. I love solving complex problems, building intuitive user interfaces, and continuously learning new technologies.  
 
-- Front-end library: React
-- CSS framework: React-bootstrap
-- CSS animations library: Animate.css
+### My Skills:  
+- **Frontend Development**: ReactJS, NextJS, JavaScript, Tailwind CSS, HTML, CSS  
+- **Backend Knowledge**: REST APIs, Axios  
+- **Programming**: JavaScript, Python, OOP  
+- **Data Structures & Algorithms**: Currently improving problem-solving skills through platforms like LeetCode  
+- **Tools**: Git, Jira, Figma  
 
-In the /personal-portfolio, you can run:
+### Key Projects:  
+1. **E-commerce Application**  
+   - Implemented features like product categorization, a dynamic cart system, user authentication, and payment integration (SSLCommerz).  
+   - React hooks and context were used for state management.
+   - 
+2. **InteliTalk**  
+   - Developed a frontend application using ReactJS and REST APIs to fetch and display solutions for skin problems.  
+   - Collaborated with a team using Jira for task tracking.  
 
-### `npm start`
+3. **LeetCode Solutions**  
+   - A dedicated repository for solving algorithmic problems to enhance my coding skills.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Certifications and Workshops:  
+- Completed **Meta React Course**  
+- Attended a **Web Development Workshop** by Rayhans IT  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Career Goals:  
+I aspire to excel as a software engineer, contributing to impactful projects and working with innovative teams.  
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Feel free to explore my repositories to see my work, and don't hesitate to connect if you have any questions or collaboration ideas!  
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Contact Me  
+- **Email**: munaimunz@gmail.com  
+- **LinkedIn**: www.linkedin.com/in/munaimun/

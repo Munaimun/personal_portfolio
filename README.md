@@ -1,41 +1,39 @@
-# Munaimun Bari Fahad - Portfolio  
+# 🌐 Munaimun Bari Fahad - Personal Portfolio  
 
-Welcome to my portfolio! This repository showcases my journey as a software engineer, highlighting the projects and skills I have developed.  
-
-## About Me  
-
-Hi, I’m **Munaimun Bari Fahad**, a passionate software engineer specializing in frontend development with ReactJS. I love solving complex problems, building intuitive user interfaces, and continuously learning new technologies.  
-
-### My Skills:  
-- **Frontend Development**: ReactJS, NextJS, JavaScript, Tailwind CSS, HTML, CSS  
-- **Backend Knowledge**: REST APIs, Axios  
-- **Programming**: JavaScript, Python, OOP  
-- **Data Structures & Algorithms**: Currently improving problem-solving skills through platforms like LeetCode  
-- **Tools**: Git, Jira, Figma  
-
-### Key Projects:  
-1. **E-commerce Application**  
-   - Implemented features like product categorization, a dynamic cart system, user authentication, and payment integration (SSLCommerz).  
-   - React hooks and context were used for state management.
-   - 
-2. **InteliTalk**  
-   - Developed a frontend application using ReactJS and REST APIs to fetch and display solutions for skin problems.  
-   - Collaborated with a team using Jira for task tracking.  
-
-3. **LeetCode Solutions**  
-   - A dedicated repository for solving algorithmic problems to enhance my coding skills.  
-
-### Certifications and Workshops:  
-- Completed **Meta React Course**  
-- Attended a **Web Development Workshop** by Rayhans IT  
-
-### Career Goals:  
-I aspire to excel as a software engineer, contributing to impactful projects and working with innovative teams.  
+Welcome to my portfolio repository! 🚀 This project showcases my skills, projects, and experience as a **Software Developer** with expertise in **React.js, JavaScript, and modern web development.**  
 
 ---
 
-Feel free to explore my repositories to see my work, and don't hesitate to connect if you have any questions or collaboration ideas!  
+## 🧑‍💻 About Me  
+I am **Munaimun Bari Fahad**, a passionate **Frontend Developer** with a strong foundation in **React.js, JavaScript, and UI/UX principles**. I have experience in building dynamic web applications, integrating APIs, and optimizing performance for better user experiences.  
 
-### Contact Me  
-- **Email**: munaimunz@gmail.com  
-- **LinkedIn**: www.linkedin.com/in/munaimun/
+🔹 **Tech Stack:** React.js, Next.js, JavaScript (ES6+), Tailwind CSS, Firebase, REST APIs  
+🔹 **Other Skills:** Problem-Solving, Data Structures & Algorithms, UI/UX Design  
+
+---
+
+## 🎓 Education  
+🎓 **Bachelor’s Degree in Computer Science** *Sonargaon University, 2024*  
+
+---
+
+## 💼 Work Experience  
+
+### **Frontend Software Developer (Intern) - Nobleroot Ltd.** *(June 2024 – August 2024)*  
+- Optimized API responses and database queries, reducing load time by **30%**.  
+- Enhanced the UI/UX, increasing user engagement by **25%**.  
+- Developed features to fetch data from the backend and display solutions for various skin problems.  
+- **Tech Stack:** React, REST APIs, Jira  
+
+### **Projects**  
+🚀 **E-commerce Website** – Built dynamic cart system, authentication, and a payment system using **React & Context API**.  
+🤖 **AI-powered Chatbot - InteliTalk** – Developed a **university inquiry chatbot** using **React, OpenAI API, and JWT authentication**.  
+
+---
+
+## 🎨 Features of This Portfolio  
+✔️ **Responsive Design** – Optimized for mobile and desktop users  
+✔️ **Project Showcase** – Highlights my best projects with live demos  
+✔️ **Interactive UI** – Built with modern UI/UX best practices  
+✔️ **Performance Optimized** – Fast loading speed with clean, maintainable code  
+✔️ **Contact Form** – Reach out to me directly from the site

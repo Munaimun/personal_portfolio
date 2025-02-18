@@ -25,28 +25,12 @@ const projects = [
     githubLink: "https://github.com/Munaimun/Complete_E-commerce",
   },
   {
-    title: "InteliTalk- Chatbot",
+    title: "Ai-Powered Chatbot- InteliTalk",
     description:
       "Created a chatbot application that utilizes Axios to handle API requests for seamless data fetching from the backend and implements secure user authorization using JWT. A streamlined chat interface for accessing university information, complemented by an admin panel for efficient database and student list management.",
     imgUrl: intelitalk,
     liveLink: "https://intelitalk.onrender.com/",
     githubLink: "https://github.com/dev-saiful/InteliTalk/tree/frontend",
-  },
-  {
-    title: "E-commerce",
-    description:
-      "This is a robust e-commerce platform developed using React, Redux, and REST API. The project delivers a seamless online shopping experience with dynamic product categorization, a responsive user interface, and a secure user authentication system. It features a real-time cart management system that allows users to add, remove, and update items effortlessly. The platform integrates various payment methods, ensuring a smooth and secure checkout process. Additionally, an admin dashboard is included for managing products, orders, and users, showcasing my proficiency in full stack front-end development and API integration.",
-    imgUrl: ecommerce,
-    liveLink: "https://munaimuns-ecommerce.netlify.app/",
-    githubLink: "https://github.com/Munaimun/Ecommerce",
-  },
-  {
-    title: "Tech-commerce(ongoing)",
-    description:
-      "Developed an e-commerce website featuring a user-friendly interface for seamless product browsing. The platform includes robust cart functionality, allowing users to effortlessly add and remove items. Secure user authentication and login management were implemented using Firebase.",
-    imgUrl: techcommerce,
-    liveLink: "https://github.com/Munaimun/TechCommerce",
-    githubLink: "https://github.com/Munaimun/TechCommerce",
   },
   {
     title: "FashionFusion - Ecommerce",
@@ -95,6 +79,22 @@ const projects = [
     imgUrl: restaurant,
     liveLink: "https://restaurant-app-eight-rho.vercel.app/",
     githubLink: "https://github.com/Munaimun/Restaurant_App",
+  },
+  {
+    title: "E-commerce",
+    description:
+      "This is a robust e-commerce platform developed using React, Redux, and REST API. The project delivers a seamless online shopping experience with dynamic product categorization, a responsive user interface, and a secure user authentication system. It features a real-time cart management system that allows users to add, remove, and update items effortlessly. The platform integrates various payment methods, ensuring a smooth and secure checkout process. Additionally, an admin dashboard is included for managing products, orders, and users, showcasing my proficiency in full stack front-end development and API integration.",
+    imgUrl: ecommerce,
+    liveLink: "https://munaimuns-ecommerce.netlify.app/",
+    githubLink: "https://github.com/Munaimun/Ecommerce",
+  },
+  {
+    title: "Tech-commerce(ongoing)",
+    description:
+      "Developed an e-commerce website featuring a user-friendly interface for seamless product browsing. The platform includes robust cart functionality, allowing users to effortlessly add and remove items. Secure user authentication and login management were implemented using Firebase.",
+    imgUrl: techcommerce,
+    liveLink: "https://github.com/Munaimun/TechCommerce",
+    githubLink: "https://github.com/Munaimun/TechCommerce",
   },
 ];
 

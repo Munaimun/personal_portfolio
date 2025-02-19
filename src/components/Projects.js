@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { motion, useAnimation } from 'framer-motion';
 import { Container, Row, Col } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
+import { useInView } from 'react-intersection-observer';
 
 import complete_E from "../assets/img/complete_ecommerce.png";
 import intelitalk from "../assets/img/intelitalk.png";
@@ -23,6 +25,14 @@ const projects = [
     imgUrl: complete_E,
     liveLink: "https://complete-e-commerce-7v1b.vercel.app/",
     githubLink: "https://github.com/Munaimun/Complete_E-commerce",
+    stacks: [
+      "React",
+      "Redux",
+      "Firebase",
+      "Axios",
+      "zustand",
+      "react-paginate",
+    ],
   },
   {
     title: "Ai-Powered Chatbot- InteliTalk",
@@ -31,6 +41,7 @@ const projects = [
     imgUrl: intelitalk,
     liveLink: "https://intelitalk.onrender.com/",
     githubLink: "https://github.com/dev-saiful/InteliTalk/tree/frontend",
+    stacks: ["React", "tailwind", "Mongo", "Axios"],
   },
   {
     title: "FashionFusion - Ecommerce",
@@ -39,6 +50,14 @@ const projects = [
     imgUrl: fashionfusion,
     liveLink: "https://fashion-fusion-commerce.vercel.app/",
     githubLink: "https://github.com/Munaimun/Fashion_Fusion",
+    stacks: [
+      "React",
+      "Redux",
+      "Firebase",
+      "Axios",
+      "zustand",
+      "react-paginate",
+    ],
   },
   {
     title: "Top Courses - Course catalog application",
@@ -47,6 +66,7 @@ const projects = [
     imgUrl: topcourses,
     liveLink: "https://top-courses-eight-ecru.vercel.app/",
     githubLink: "https://github.com/Munaimun/TopCourses",
+    stacks: ["React", "tailwind", "Firebase", "Axios", "react-paginate"],
   },
   {
     title: "ViewFinder - Tour Packages Application",
@@ -55,6 +75,7 @@ const projects = [
     imgUrl: viewfinder,
     liveLink: "https://view-finder-nine.vercel.app/",
     githubLink: "https://github.com/Munaimun/ViewFinder",
+    stacks: ["React", "Axios", "react-paginate"],
   },
   {
     title: "Quiz App",
@@ -63,6 +84,7 @@ const projects = [
     imgUrl: quizjs,
     liveLink: "https://munaimun.github.io/ScriptTest/",
     githubLink: "https://github.com/Munaimun/Quiz_js",
+    stacks: ["JavaScript", "HTML", "CSS"],
   },
   {
     title: "Hospital Website",
@@ -71,6 +93,7 @@ const projects = [
     imgUrl: hospital,
     liveLink: "https://hospital-website-five.vercel.app/",
     githubLink: "https://github.com/Munaimun/hospital_website",
+    stacks: ["React", "tailwind", "Router Dom"],
   },
   {
     title: "Restaurant Web",
@@ -79,6 +102,7 @@ const projects = [
     imgUrl: restaurant,
     liveLink: "https://restaurant-app-eight-rho.vercel.app/",
     githubLink: "https://github.com/Munaimun/Restaurant_App",
+    stacks: ["React", "react-router-dok", "react-icons"],
   },
   {
     title: "E-commerce",
@@ -87,6 +111,14 @@ const projects = [
     imgUrl: ecommerce,
     liveLink: "https://munaimuns-ecommerce.netlify.app/",
     githubLink: "https://github.com/Munaimun/Ecommerce",
+    stacks: [
+      "React",
+      "context-hook",
+      "Firebase",
+      "Axios",
+      "reselect",
+      "vite-plugin-svgr",
+    ],
   },
   {
     title: "Tech-commerce(ongoing)",
@@ -95,13 +127,21 @@ const projects = [
     imgUrl: techcommerce,
     liveLink: "https://github.com/Munaimun/TechCommerce",
     githubLink: "https://github.com/Munaimun/TechCommerce",
+    stacks: ["React", "context-hook", "express", "Mongo"],
   },
 ];
 
 export const Projects = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
 
-  // Function to toggle the read more/less
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   const handleReadMoreClick = (index) => {
     setExpandedIndex(expandedIndex === index ? null : index);
   };
@@ -124,6 +164,11 @@ export const Projects = () => {
     ));
   };
 
+  const itemVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
   return (
     <section className="project" id="projects">
       <Container>
@@ -139,9 +184,24 @@ export const Projects = () => {
                   <h2 className="animate__animated animate__jackInTheBox">
                     {renderSpacedText(`Projects`)}
                   </h2>
-                  <div className="container project-page" id="container">
+
+                  <motion.div
+                    ref={ref}
+                    initial="hidden"
+                    animate={controls}
+                    variants={{
+                      visible: { transition: { staggerChildren: 0.1 } },
+                      hidden: {},
+                    }}
+                    className="container project-page"
+                    id="container"
+                  >
                     {projects.map((project, index) => (
-                      <div className="card" key={index}>
+                      <motion.div
+                        key={index}
+                        className="card"
+                        variants={itemVariants}
+                      >
                         <div>
                           <img
                             className="project-image"
@@ -151,6 +211,7 @@ export const Projects = () => {
                         </div>
                         <div className="project-info">
                           <h2 className="title">{project.title}</h2>
+
                           <p className="description">
                             {expandedIndex === index
                               ? project.description
@@ -164,7 +225,19 @@ export const Projects = () => {
                                 : " Read More"}
                             </span>
                           </p>
+
+                          <span className="stack-span">
+                            {project.stacks?.map((stack, stackIndex) => (
+                              <button
+                                key={stackIndex}
+                                className="stack-button"
+                              >
+                                {stack}
+                              </button>
+                            ))}
+                          </span>
                         </div>
+
                         <div className="buttons">
                           <a
                             className="project-link"
@@ -183,9 +256,9 @@ export const Projects = () => {
                             Github Source Code
                           </a>
                         </div>
-                      </div>
+                      </motion.div>
                     ))}
-                  </div>
+                  </motion.div>
                 </div>
               )}
             </TrackVisibility>
